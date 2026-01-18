@@ -1,0 +1,350 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');   
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.store-box-container 
+{ 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	font-family: Montserrat;
+	color: #fff;     
+	width: 100%;
+	height: 100%; 
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 15%;
+ 
+}
+
+.store-box-container .store-global-elements
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+}
+
+.store-box-container .store-global-elements .spaces-elements
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	height: 100%;
+} 
+
+.store-box-container .store-global-elements .spaces-elements .store-element-category
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	float: center;
+	align-items: center;
+	text-align: center;
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-category .store-element-category-item
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center; 
+	width: 22rem;
+	height: 3rem; 
+	border: 0.15rem solid #ffffff20;
+	border-radius: 5px;
+	color: #fff; 
+	margin: 10px; 
+	font-weight: 600;
+	font-size: 0.9vw;
+	transition: all .33s;
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-category .store-element-category-item:hover {
+	background: #9478ff; 
+}
+.store-box-container .store-global-elements .spaces-elements .store-element-category .store-element-category-item.active {
+	background: #9478ff;
+	box-shadow: 0 0 2vw 0.5vw #9478ff50;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------[STORE LIST ELEMENTS]---------------------------------------------------------------------*/
+.store-box-container .store-global-elements .spaces-elements .store-element-items
+{
+	display: flex; 
+	text-align: center; 
+	flex-direction: column;
+	flex-flow: row wrap;
+	margin: 10px; 
+	max-width: 45.4rem; 
+	min-height: 20.5rem;
+	border: 0.15rem solid #ffffff20;
+	border-radius: 5px; 
+	color: #fff;  
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-items .store-element-items-item
+{ 
+	color: #fff;
+	background-color: #ffffff20;
+	border-radius: 5px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: all .33s;
+	width: 10rem;
+	height: 9rem;
+	margin: 10px 10px; 
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-items .store-element-items-item:hover 
+{
+	background: #9478ff;
+	box-shadow: 0 0 2vw 0.5vw #9478ff50;
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-items .store-element-items-item .store-element-item-title
+{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px; 
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-items .store-element-items-item .store-element-item-price
+{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #019e57;
+}
+
+.store-box-container .store-global-elements .spaces-elements .store-element-items .store-element-items-item .image
+{
+	margin: 5px;
+	width: 5rem;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------[STORE LIST CHECKOUT]---------------------------------------------------------------------*/
+.store-box-container .store-global-elements .store-element-checkout
+{
+	display: flex; 
+	text-align: center; 
+	flex-direction: column; 
+	align-items: center;
+	margin: 10px; 
+	width: 22rem; 
+	height: 35.2rem;
+	border: 0.15rem solid #ffffff20;
+	border-radius: 5px; 
+	color: #fff;  
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-title
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;  
+	margin: 17px; 
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-line
+{
+	background-color: #ffffff20;
+	width: 100%;
+	height: 0.15rem;
+	margin-top: -6px;
+}
+
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list
+{
+	display: flex;
+	flex-direction: column; 
+}
+  
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll
+{
+	overflow-y: scroll;
+	height: 29rem;
+	width: 100%;
+	border-bottom: 0.15rem solid #ffffff20;
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: left;
+	align-items: center; 
+	color: #fff;
+	background-color: #ffffff20;
+	border-radius: 5px; 
+	margin: 5px; 
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px; 
+	width: 21rem;
+	height: 2rem; 
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item .image
+{
+	width: 32px;
+	height: 32px;  
+	margin: 7px;
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item .item-data
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center; 
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item .item-data .item
+{   
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item .item-data .amount
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center; 
+	min-width: 30px;
+	height: 17px; 
+	border-radius: 5px; 
+	font-size: 15px;
+	font-weight: 600; 
+	color: #fff; 
+	background-color: #9478ff;  
+	margin: 7px;
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item .delete
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center; 
+	width: 30px;
+	height: 25px; 
+	border-radius: 5px; 
+	font-size: 14px;
+	font-weight: 600; 
+	color: #fff; 
+	background-color: #ff3333;  
+	margin: 7px;
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-total
+{
+	display: flex; 
+	justify-content: space-between;
+	text-align: center;
+	align-items: center; 
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px; 
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-total .store-element-checkout-button
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;  
+	width: 7rem;
+	height: 2rem;
+	border-radius: 5px; 
+	margin: 0 7px; 
+	transition: all .33s;
+	background-color: #9478ff;  
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-total .store-element-checkout-button:hover
+{ 
+	box-shadow: 0 0 2vw 0.5vw #9478ff50;
+}
+
+.store-box-container .store-global-elements .store-element-checkout .store-element-checkout-list .store-element-checkout-list-scroll .store-element-checkout-list-item .delete:hover 
+{ 
+	box-shadow: 0 0 2vw 0.5vw #ff333350;
+} 
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------[STORE GLOBAL ELEMENTS]-------------------------------------------------------------------*/
+.store-background-effect
+{
+	background: radial-gradient(20% 100% at 50% 50%, rgba(65, 59, 180, 0) 0%, rgba(22, 21, 45,.70) 100%);
+	background-size:500%, 600%;
+	left: 0;
+	top: 0;
+	position: absolute; 
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+} 
+
+.store-close-button
+{ 
+	display: flex;  
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	float: left; 
+	position: absolute;
+	 
+
+	margin-bottom: 68rem;
+	margin-left: 107rem; 
+  
+	width: 10rem;
+	height: 3rem; 
+	color: #fff;
+	background-color: #ffffff20;
+	border-radius: 5px;  
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	transition: all .33s; 
+}
+
+.store-close-button:hover 
+{
+	box-shadow: 0 0 2vw 0.5vw #ffffff20;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    display: block;
+    background-color: #b2b3b620;
+    border-radius: 2px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #0094eb;
+    border-radius: 2px;
+    background: #0094eb;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/

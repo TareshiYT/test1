@@ -1,0 +1,461 @@
+.application-banking-container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: 6px solid #000;
+    
+    background-color: #dddbdb;
+    color: #000;
+    font-family: 'Inter', sans-serif; 
+
+    animation-duration:.3s;
+    animation-name:popin; 
+}
+ 
+.application-banking-container .application-banking-homepage
+{
+    width: 100%; 
+    height: 80%; 
+}
+
+.application-banking-container .application-banking-welcome
+{
+    width: 100%;  
+    margin-top: 20%;
+}
+
+.application-banking-container .application-banking-welcome .application-banking-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+     
+    margin-top: 40%;
+}
+
+.application-banking-container .application-banking-welcome .application-banking-header .avatar 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 70px;
+    height: 70px;
+    border-radius: 50px; 
+    font-size: 20px;
+    font-weight: 600; 
+    background-color: #6b6bfa;
+    color: #fff;
+}
+
+.application-banking-container .application-banking-welcome .application-banking-header .description 
+{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin-top: 10px;
+} 
+
+.application-banking-container .application-banking-welcome .application-banking-footer 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%; 
+    margin-top: 50%;
+}
+
+.application-banking-container .application-banking-welcome .application-banking-footer .title 
+{
+    font-size: 16px;
+    font-weight: 500;  
+    color: #000000;
+    letter-spacing: 0.5px;
+    opacity: 0.5;
+}
+
+.application-banking-container .application-banking-welcome .application-banking-footer .icon 
+{
+    font-size: 40px;
+    color: #6b6bfa;
+    margin-top: 5px;
+}
+ 
+.application-banking-container .application-banking-welcome .application-banking-footer .icon:hover { transform: scale(1.2); } 
+.application-banking-container .application-banking-account 
+{  
+    width: 100%; 
+    margin-top: 50px;
+    margin-left: 15px;
+}
+ 
+.application-banking-container .application-banking-account .application-banking-header
+{ 
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px; 
+    width: 100%;
+    height: 50%; 
+}
+
+.application-banking-container .application-banking-account .application-banking-header .account-owner 
+{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left; 
+    width: 100%;
+    height: 4rem;
+}
+
+.application-banking-container .application-banking-account .application-banking-header .account-owner .owner { margin-top: 2px; }
+  
+.application-banking-container .application-banking-account .application-banking-header .account-banking-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;  
+    width: 90%;
+    height: 10rem;
+    border-radius: 10px; 
+    color: #fff;  
+    background: linear-gradient(#6b6bfa,transparent), linear-gradient(90deg,#3a3ae6,transparent), linear-gradient(-90deg,#29297a,transparent); 
+}
+
+.application-banking-container .application-banking-account .application-banking-header .account-banking-card .header-banking-card
+{  
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    font-size: 15px;
+    font-weight: 600; 
+
+    margin: 20px 20px;
+}
+
+.application-banking-container .application-banking-account .application-banking-header .account-banking-card .footer-banking-card
+{ 
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    font-size: 15px;
+    font-weight: 600;
+
+    margin: 20px 20px;
+}
+
+.application-banking-container .application-banking-tools-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;  
+    z-index: 19999;
+}
+
+.application-banking-container .application-banking-tools
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    height: 2.3rem;
+    width: 70%; 
+    border-radius: 20px;
+    background-color: rgb(196 196 196);
+    color: rgb(130 130 130);
+}
+
+.application-banking-container .application-banking-tools .option { font-size: 22px; margin: 0 20px; }
+.application-banking-container .application-banking-tools .option.active, .application-banking-container .application-banking-tools .option:hover { color: #6b6bfa; }
+ 
+.application-banking-container .application-banking-recents-header
+{ 
+    display: flex;
+    flex-direction: column;  
+    margin-left: 15px;
+    margin-top: 30px; 
+    width: 90%;
+    height: 39%;
+}
+
+.application-banking-container .application-banking-recents-header .title 
+{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.application-banking-container .application-banking-recents-header .recent-items { margin-top: 10px; } 
+.application-banking-container .application-banking-recents-header .recent-items .item
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 3.2rem; 
+    background-color: rgb(196 196 196);
+    border-radius: 10px; 
+    margin-top: 10px;
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .icon-transaction
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #000;
+    color: #fff; 
+    border-radius: 10px; 
+    min-width: 40px;
+    min-height: 40px;
+
+    margin-left: 10px; 
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: 15rem;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .description .title-description
+{
+    font-size: 14.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .description .sub-title-description
+{
+    font-size: 12.5px;
+    font-weight: 600; 
+    color: #000;
+    opacity: 0.5; 
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .description-two 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: right;
+    width: 9rem;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .description-two .amount-two
+{
+    font-size: 14.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #218d00;
+}
+
+.application-banking-container .application-banking-recents-header .recent-items .item .description-two .sub-title-two
+{
+    font-size: 12.5px;
+    font-weight: 600; 
+    color: #000;
+    opacity: 0.5; 
+}
+
+
+.application-transfer-page
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+.application-transfer-page .title 
+{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #000000;
+    opacity: 0.8;
+}
+ 
+.application-transfer-page .application-search-bar
+{  
+    margin-top: 10px;
+    width: 90%;
+    font-weight: 15px;
+    font-weight: 500;    
+}
+
+.application-transfer-page .application-search-bar .search 
+{
+    width: 100%;
+    position: relative;
+    display: flex;  
+}
+  
+.application-transfer-page .application-search-bar .search .searchTerm 
+{
+    width: 100%; 
+    padding: 5px;
+    height: 30px; 
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(196 196 196);
+    color: rgba(97, 97, 97, 0.521);
+    font-weight: 20px;
+    font-weight: 500;   
+    letter-spacing: 1px; 
+}
+ 
+.application-transfer-page .application-search-bar .search .search-button 
+{
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    width: 35px;
+    height: 30px; 
+    border: none;
+    cursor: pointer; 
+    background-color: rgb(196 196 196);
+    color: rgba(97, 97, 97, 0.521); 
+    border-radius: 5px 0 0 5px; 
+    font-weight: 20px;
+    font-weight: 500;  
+} 
+
+.application-transfer-page .application-transfer-results
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 90%;
+    height: 11.5rem; 
+    margin-top: 10px;   
+    overflow-x: auto;  
+}
+ 
+.application-transfer-page .application-transfer-results .item-recipient
+{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;   
+    width:100%;
+    height: 3.2rem;  
+    background-color: rgb(196 196 196);
+    border-radius: 15px;
+    color: #000;
+}
+
+.application-transfer-page .application-transfer-results .item-recipient:hover 
+{
+    background-color: rgb(165, 165, 165);
+}
+
+.application-transfer-page .application-transfer-results .item-recipient .name, .application-transfer-page .application-transfer-results .item-recipient .card-recipient
+{ 
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px; 
+    margin-left: 10px;
+} 
+
+
+.application-transfer-page .application-transfer-results .item-amount
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    height: 50%; 
+}
+
+.application-transfer-page .application-transfer-results .item-amount-row
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;   
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px; 
+    width: 100%;
+}
+
+.application-transfer-page .application-transfer-results .item-amount-row .button:hover { color: #6b6bfa; }
+.application-transfer-page .application-transfer-results .slide-banking-amount {
+   
+    -webkit-appearance: none;
+    background-color: rgb(196 196 196);
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+    margin-top: 10px;
+}
+
+.application-transfer-page .application-transfer-results .slide-banking-amount::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #6b6bfa;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.application-transfer-page .application-transfer-results .available-amount 
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.5;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+ 
+.application-transfer-page .application-transfer-results .button-send-trasnfer:hover { box-shadow: 0px 0px 20px #6b6bfa; }
+.application-transfer-page .application-transfer-results .button-send-trasnfer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 85%;
+    height: 2.2rem; 
+    background-color: #6b6bfa;
+    color: #fff;
+    margin-top: 10%;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+} 

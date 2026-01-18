@@ -1,0 +1,291 @@
+.application-darkweb-container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: 6px solid #000;
+    
+    background-image: url('https://i.imgur.com/pqOVG1o.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #fff;
+    font-family: 'Inter', sans-serif; 
+
+    animation-duration:.3s;
+    animation-name:popin;
+}
+
+.application-darkweb-container .application-darkweb-container-first
+{
+    display: flex; 
+    flex-direction: column;
+}
+
+.application-darkweb-container .application-title
+{ 
+    margin-top: 80px;
+    margin-left: 18px;  
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px; 
+    text-shadow: 0px 0px 10px #ffffff38;
+}
+
+.application-darkweb-container .application-description
+{ 
+    font-weight: 12px;
+    font-weight: 500;
+    opacity: 0.8; 
+    margin-top: 10px;
+    margin-left: 18px; 
+    letter-spacing: 1px; 
+    text-shadow: 0px 0px 10px #ffffff38;
+}
+
+.application-darkweb-container .application-button-contract
+{ 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    width: 10rem;
+    height: 2rem;  
+    font-weight: 17px;
+    font-weight: 600; 
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;  
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+.application-darkweb-container .application-button-contract:hover , .application-darkweb-container .application-darkweb-container-place .application-centered-button .application-place-contract:hover 
+{
+    box-shadow: 0px 0px 10px #fff;
+}
+ 
+.application-darkweb-container .application-search-bar
+{ 
+    width: 17.5rem;
+     
+    margin-top: 20px;
+    margin-left: 18px;  
+ 
+    font-weight: 15px;
+    font-weight: 500;  
+}
+
+.application-darkweb-container .application-search-bar .search 
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+  
+.application-darkweb-container .application-search-bar .search  .searchTerm 
+{
+    width: 100%;
+    border: 3px solid #ffffff38;
+    border-right: none;
+    padding: 5px;
+    height: 30px; 
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    color: #000;  
+    font-weight: 15px;
+    font-weight: 500; 
+}
+ 
+.application-darkweb-container .application-search-bar .search  .searchButton 
+{
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    width: 35px;
+    height: 30px; 
+    border: 3px solid #ffffff38;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+} 
+
+
+.application-darkweb-container .application-search-results
+{ 
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 15px;
+    font-weight: 500; 
+      
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+.application-darkweb-container .application-search-results .item 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 17.5rem;
+    height: 2.8rem; 
+    background-color: #ffffffd3;
+    color: #000; 
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.application-darkweb-container .application-search-results .item:hover
+{
+    background-color: #ffffffde;
+}
+
+.application-darkweb-container .application-search-results .item .icon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+    margin: 0 10px; 
+    border-radius: 50px; 
+    height: 30px;
+    width: 30px;
+}
+
+.application-darkweb-container .application-darkweb-container-place { }
+
+.application-darkweb-container .application-darkweb-container-place .application-target
+{
+    margin-top: 20px;
+    margin-left: 18px; 
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.application-darkweb-container .application-darkweb-container-place .application-target-item
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 17.5rem;
+    height: 2.8rem; 
+    background-color: #ffffffd3;
+    color: #000; 
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 18px; 
+}
+
+
+.application-darkweb-container .application-darkweb-container-place .application-target-center
+{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 30px;
+}
+ 
+.application-darkweb-container .application-darkweb-container-place .application-target-center .slider-money {
+   
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 17.5rem;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: 0;
+}
+
+.application-darkweb-container .application-darkweb-container-place .application-target-center .slider-money::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #6b6bfa;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.application-darkweb-container .application-darkweb-container-place .application-target-center .slider-money::-webkit-slider-thumb:hover 
+{
+    box-shadow: 0px 0px 20px #6b6bfa;
+}
+
+.application-darkweb-container .application-darkweb-container-place .aplication-target-checked
+{ 
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+
+    margin-top: 13px;
+    margin-left: 15px;  
+}
+ 
+ 
+.application-darkweb-container .application-darkweb-container-place .aplication-target-checked .contract-checkbox {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;	
+}
+
+.application-darkweb-container .application-darkweb-container-place .aplication-target-checked .contract-checkbox:before {
+	font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 15px;
+    color: transparent !important;
+    background: #fef2e0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 0.15em solid #6b6bfa;
+    margin-right: 7px;
+}
+
+.application-darkweb-container .application-darkweb-container-place .aplication-target-checked .contract-checkbox:checked:before {
+
+	color: #6b6bfa !important;
+}
+
+
+.application-darkweb-container .application-darkweb-container-place .application-centered-button
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+    margin-top: 60%;
+}
+
+.application-darkweb-container .application-darkweb-container-place .application-centered-button .application-place-contract
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    width: 10rem;
+    height: 2rem;  
+    font-weight: 17px;
+    font-weight: 600; 
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;   
+}
+

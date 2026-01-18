@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');   
+ 
+.character-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    user-select: none;
+     
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.character-container .character-creator-scrollable
+{ 
+    height: 52rem; 
+    overflow-y:auto; 
+}
+
+::-webkit-scrollbar { 
+    
+	background: transparent;
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:hover {
+	background-color: #ffd000;
+    background: transparent;
+}
+
+.character-container .character-title 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: left;  
+}
+
+.character-container .character-title .title 
+{
+    color: #6b6bfa; 
+    text-shadow: 0 0 3vh #6b6bfa50;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.character-container .character-title .subtitle 
+{   
+    font-size: 1.5rem;
+	margin-top: -7px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+.character-container .character-gender
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.character-container .character-gender .title
+{
+    font-size: 16px;
+}
+
+.character-container .character-gender .subtitle
+{
+    font-size: 11px; 
+    opacity: 0.7;
+}
+
+.character-container .character-gender .buttons
+{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 7px;
+}
+
+.character-container .character-gender .buttons .button 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    width: 8rem;
+    height: 2rem;
+    
+    border: 2px solid rgb(160, 160, 160, 0.40);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.character-container .character-gender .buttons .button.active 
+{
+    background-color: rgba(163, 149, 224, 0.9);
+    border: none;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+.character-container .character-parents
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 24rem;
+}
+
+.character-container .character-parents .title
+{
+    font-size: 16px;
+}
+
+.character-container .character-parents .subtitle
+{
+    font-size: 11px; 
+    opacity: 0.7;
+}
+
+.character-container .character-parents .character-parents-image
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    margin-top: 15px; 
+    width: 23rem;
+}
+
+.character-container .character-parents .character-parents-image img
+{
+    width: 7rem;
+    height: 8rem;
+}
+
+.character-container .character-parents .character-parents-change
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    margin-top: 7px;
+    width: 23rem;
+}
+
+.character-container .character-parents .character-parents-change .buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 7rem;
+    margin: 0 15px;
+    font-size: 13px;
+}
+
+.character-container .character-parents .character-parents-change .buttons .button-click:hover
+{
+    color: #6b6bfa;
+    box-shadow: 0px 0px 20px #6b6bfa; 
+}
+
+.character-container .character-parents .character-parents-resemblance
+{
+    margin-top: 15px; 
+}
+
+.character-container .character-parents .character-parents-resemblance .title 
+{
+    font-size: 13px;
+}
+
+.character-container .character-parents .character-parents-resemblance .buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 23rem;
+    margin-top: 5px; 
+    font-size: 15px;
+} 
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+.character-container .character-eyes
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 27rem;
+}
+
+.character-container .character-eyes .title
+{
+    font-size: 16px;
+}
+
+.character-container .character-eyes .subtitle
+{
+    font-size: 11px; 
+    opacity: 0.7;
+}
+
+.character-container .character-eyes .character-parents-eyes-scale
+{
+    margin-top: 15px; 
+}
+
+.character-container .character-eyes .character-parents-eyes-scale .title 
+{
+    font-size: 13px;
+}
+
+.character-container .character-eyes .character-parents-eyes-scale .buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 23rem;
+    margin-top: 5px; 
+    font-size: 15px;
+}
+
+.character-container .character-eyes .character-parents-eyes-color
+{
+    margin-top: 15px; 
+    width: 25rem;
+}
+ 
+.character-container .character-eyes .character-parents-eyes-color .title 
+{
+    font-size: 13px;
+}
+
+.character-container .character-eyes .character-parents-eyes-color .buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: center; 
+    margin-top: 5px; 
+    font-size: 15px;
+}
+
+.character-container .character-eyes .character-parents-eyes-color .button
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin-right: 10px; 
+    width: 21px;
+    height: 20px;
+    border-radius: 5px; 
+    color: #fff;
+    background-color: red;
+}
+
+.character-container .character-slider { 
+    -webkit-appearance: none;
+    background-color: rgb(160, 160, 160, 0.40);
+    width: 270px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+.character-container .character-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgba(163, 149, 224, 0.9);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: .3s ease-in-out;
+} 
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/ 
+.character-container .character-eyebrow
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 27rem;
+}
+
+.character-container .character-eyebrow .title
+{
+    font-size: 15px;
+}
+
+.character-container .character-eyebrow .subtitle
+{
+    font-size: 11px; 
+    opacity: 0.7;
+}
+
+.character-container .character-eyebrow .character-eyebrow-change
+{ 
+    margin-top: 15px; 
+}
+
+.character-container .character-eyebrow .character-eyebrow-change .eyebrow-style
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 23rem;
+}
+
+.character-container .character-eyebrow .character-eyebrow-change .title
+{
+    font-size: 12px;
+}
+
+.character-container .character-eyebrow .character-eyebrow-change .buttons
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem; 
+    font-size: 12px;
+}
+
+.character-container .character-eyebrow .character-eyebrow-change .buttons .button-click:hover
+{
+    color: #6b6bfa;
+    box-shadow: 0px 0px 20px #6b6bfa; 
+}
+
+.character-container .character-eyebrow .character-eyebrow-change .eyebrow-height
+{
+    margin-top: 15px; 
+}
+
+.character-container .character-eyebrow .character-eyebrow-change .eyebrow-height .buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: center; 
+    margin-top: 5px; 
+    font-size: 15px;
+    width: 23rem;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+.character-container .character-hair
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 27rem;
+}
+
+.character-container .character-hair .title
+{
+    font-size: 15px;
+}
+
+.character-container .character-hair .subtitle
+{
+    font-size: 11px; 
+    opacity: 0.7;
+}
+
+.character-container .character-hair .character-hair-change
+{ 
+    margin-top: 15px; 
+}
+
+.character-container .character-hair .character-hair-change .hair-style
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 23rem;
+}
+
+.character-container .character-hair .character-hair-change .hair-style-color
+{
+    display: flex;
+    flex-direction: column;  
+    justify-content: left;
+    text-align: left;
+    align-items: left;  
+}
+
+.character-container .character-hair .character-hair-change .buttons
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem; 
+    font-size: 12px; 
+}
+
+.character-container .character-hair .character-hair-change .buttons .button-click:hover
+{
+    color: #6b6bfa;
+    box-shadow: 0px 0px 20px #6b6bfa; 
+}
+
+.character-container .character-hair .character-hair-change .hair-style-color .buttons-colors
+{
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: left;
+    text-align: left; 
+    margin-top: 10px; 
+    width:20rem;
+    height: 150px; 
+} 
+
+.character-container .character-hair .character-hair-change .hair-style-color .buttons-colors .button
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    margin-right: 5px;
+    margin-top: 5px; 
+    width: 21px;
+    height: 20px;
+    border-radius: 5px; 
+    color: #fff;
+    background-color: red; 
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------------*/ 
+.character-container .character-nose-lip
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 27rem;
+}
+ 
+.character-container .character-nose-lip .title
+{
+    font-size: 15px;
+}
+
+.character-container .character-nose-lip .subtitle
+{
+    font-size: 11px; 
+    opacity: 0.7;
+}
+ 
+.character-container .character-nose-lip .character-parents-nose-width .buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 23rem;
+    margin-top: 5px; 
+    font-size: 15px;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+.character-container .character-container-buttons
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+    width: 23.9rem;
+    margin-top: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.character-container .character-container-buttons .button
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 9.7rem;
+    height: 2.2rem;
+    margin-right: 20px;
+
+    background-color: #fff;
+    color: #000;
+    letter-spacing: 1px;
+    border-radius: 7px;
+}
+
+.character-container .character-container-buttons .button:hover
+{
+    box-shadow: 0px 0px 20px #fff; 
+}
+
+.character-creator-effect 
+{
+    background: radial-gradient(20% 100% at 50% 50%, rgba(65, 59, 180, 0) 0%, rgba(22, 21, 45,.70) 100%);
+    background-size: 100%, 200%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+} 

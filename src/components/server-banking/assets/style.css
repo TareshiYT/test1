@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');  
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');    
+  
+.box-banking-container
+{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+ 
+/*------------------------------------------------------- [ LEFT CONTAINER ] -------------------------------------------------------*/
+.box-banking-container .box-banking-left-container
+{
+    display: flex;
+    flex-direction: row; 
+    text-align: left;
+    justify-content: space-between;
+    float: left;
+    width: 99%;
+    height: 5rem;
+    margin: 10px 50px; 
+}
+
+.box-banking-container .box-banking-left-container .clothing-informations
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+ 
+.box-banking-container .box-banking-left-container .clothing-informations .icon 
+{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 15px;
+
+    width: 3.2rem;
+    height: 2rem;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.box-banking-container .box-banking-left-container .clothing-informations .text
+{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 0px 10px #dfdbdb63;
+}
+
+.box-banking-container .box-banking-left-container .clothing-title 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: left;  
+    float: left;
+    
+    font-family: 'Inter', sans-serif; 
+	font-weight: 600;
+    font-size: 18px;  
+}
+
+.box-banking-container .box-banking-left-container .clothing-title .title 
+{
+    color: #6b6bfa; 
+    text-shadow: 0 0 3vh #6b6bfa50;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.box-banking-container .box-banking-left-container .clothing-title .subtitle 
+{   
+    font-size: 1.5rem;
+	margin-top: -7px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------- [ CENTER CONTAINER ] -----------------------------------------------------*/
+.box-banking-container .box-banking-center-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;  
+} 
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------- [ CENTER HEADER CONTAINER ] ----------------------------------------------*/ 
+.box-banking-container .box-banking-center-container .container-header
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;  
+    zoom: 90%;
+ 
+
+    width: 65%;
+}
+
+.box-banking-container .box-banking-center-container .container-header .item
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    color: #fff;
+	background-color: #ffffff10;
+    border: 2.5px solid rgba(255, 255, 255, 0.479);
+    border-radius: 10px; 
+    margin: 10px; 
+    width: 19rem;
+    height: 4rem; 
+}
+
+.box-banking-container .box-banking-center-container .container-header .item .description, .icon
+{
+    margin: 0 15px;
+}
+
+.box-banking-container .box-banking-center-container .container-header .item .description
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left; 
+} 
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+ 
+/*------------------------------------------------------- [ CENTER FOOTER CONTAINER ] ----------------------------------------------*/
+.box-banking-container .box-banking-center-container .container-footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    zoom: 90%;
+    margin-top: 5rem;  
+    width: 65%;
+}
+
+.box-banking-container .box-banking-center-container .container-footer .item
+{
+    display: flex; 
+    flex-direction: column;  
+    align-items: center; 
+    color: #fff;
+	background-color: #ffffff10;
+    border: 2.5px solid rgba(255, 255, 255, 0.479);
+    border-radius: 10px; 
+    margin: 0 20px; 
+    width: 19rem;
+    height: 14rem; 
+    letter-spacing: 0.5px;
+    transition: all .4s ease;
+}
+
+.box-banking-container .box-banking-center-container .container-footer .item:hover 
+{
+    background-color: rgb(255, 208, 0, 0.20); 
+}
+
+.box-banking-container .box-banking-center-container .container-footer .item .description 
+{
+    display: flex;  
+    flex-direction: column; 
+    align-items: left;
+    text-align: left;
+    margin: 25px 15px; 
+}
+
+.box-banking-container .box-banking-center-container .container-footer .item .button
+{
+    display: flex; 
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    transition: all .4s ease;
+    width: 16rem;
+    height: 2rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15%; 
+    border-radius: 5px;
+    background-color: #6b6bfa;
+    color: #fff;
+}
+
+.box-banking-container .box-banking-center-container .container-footer .item .button:hover 
+{
+    box-shadow: 0px 0px 10px #fff;
+} 
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------- [ MODAL BANKING CONTAINER ] ----------------------------------------------*/
+.banking-modal-container
+{
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+    align-items: center;  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+	top: 0;
+    cursor: pointer;
+}
+ 
+.banking-modal-container .items 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    align-items: center; 
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; 
+    z-index: 1000; 
+    -webkit-animation: fadeInFromNone 0.5s ease-out; -moz-animation: fadeInFromNone 0.5s ease-out; -o-animation: fadeInFromNone 0.5s ease-out; animation: fadeInFromNone 0.5s ease-out;
+}
+  
+.banking-modal-container .items .title 
+{
+    color: #d68b00; 
+    font-weight: 700;
+	font-size: 25px; 
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.banking-modal-container .items .description 
+{
+    margin: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.9;
+    width: 21rem;
+}
+
+.banking-modal-container .items .banking-box-input:focus 
+{
+	border: 0.15vw solid #6b6bfa;
+}
+
+.banking-modal-container .items .banking-box-input 
+{ 
+    width: 21rem;
+    height: 3rem; 
+	outline: none;
+    transition: all .4s ease;
+    color: #fff; 
+    background-color: rgb(120, 99, 212, 0.40);
+    border: 2px solid rgba(120, 99, 212, 0.90);
+	border-radius: 5px; 
+	border: none; 
+    text-align: center;  
+    font-family: 'Inter', sans-serif; 
+	font-weight: 600;
+    font-size: 15px; 
+    letter-spacing: 1px; 
+    text-decoration: none;
+    -webkit-appearance: none;
+    margin-top: 20px;
+}
+
+.banking-modal-container .items .buttons 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.banking-modal-container .items .buttons .button
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    width: 10rem;
+    height: 2.2rem;
+    margin: 0 10px; 
+    border-radius: 5px; 
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;   
+    background-color: #ffa602;
+    color: #000000d0; 
+}
+
+.banking-modal-container .items .buttons .button:hover 
+{
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.banking-modal-container .banking-modal-effect 
+{
+	background: radial-gradient(20% 100% at 50% 50%, rgba(65, 59, 180, .20) 0%, rgba(22, 21, 45,.90) 100%);
+	background-size:500%, 600%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}  
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.background-banking-effect 
+{
+	background: radial-gradient(20% 100% at 50% 50%, rgba(65, 59, 180, 0) 0%, rgba(22, 21, 45,.70) 100%);
+	background-size:500%, 600%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+} 
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

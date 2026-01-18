@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">  
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+ 
+    <script>
+      window.e_trigger = function(name, ...args) { mp.trigger(name, ...args); };
+      window.e_invoke = function(name, ...args) { mp.invoke(name, ...args); }; 
+      window.e_add = function(name, ...args) { mp.events.add(name, ...args); }; 
+    </script>  
+    <script src="rage-rpc.umd.js"></script> 
+
+    <script>
+      window.e_rpc = function(name, ...args) {
+        return new Promise(function(resolve, reject) {
+          resolve(rpc.callServer(name, ...args));
+        });
+      }  
+      window.c_rpc = function(name, ...args) {
+        return new Promise(function(resolve, reject) {
+            resolve(rpc.callClient(name, ...args));
+        });
+      }
+    
+      window.e_rpc.add = function(name, ...args) {
+        return new Promise(function(resolve, reject) {
+            resolve(rpc.register(name, ...args));
+        }); 
+      }
+      window.e_rpc.remove = function(name) {
+        return new Promise(function(resolve, reject) {
+            resolve(rpc.unregister(name));
+        }); 
+      }  
+    </script>
+  </body>
+</html>  

@@ -1,0 +1,380 @@
+.application-garage-container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: 6px solid #000;
+    
+    display: flex; 
+    flex-direction: column; 
+    background: #fff; 
+
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+}
+
+.application-garage-container .application-garage-inspect-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  
+    width: 67.4%;
+    height: 3.2%; 
+
+    margin-top: 48px;
+    margin-left: 10px; 
+}
+
+.application-garage-container .application-garage-inspect-header .inspect-back:hover, .application-garage-container .application-garage-footer .application-garage-list .application-garage-list-header .inspect-back:hover { text-shadow: 0px 0px 10px #0375FF; }
+.application-garage-container .application-garage-inspect-header .inspect-back 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    color: #0375FF;  
+}
+ 
+.application-garage-container .application-garage-inspect-header .inspect-description
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
+    width: 7.97rem; 
+}
+ 
+.application-garage-container .application-garage-inspect-header .inspect-description .item-status
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    text-align: center; 
+}
+
+.application-garage-container .application-garage-inspect-header .inspect-description .item-status .point-round { width: 15px; height: 15px; border-radius: 50px; background-color: red; box-shadow: 0px 0px 10px red; } 
+.application-garage-container .application-garage-inspect-header .inspect-description .item-status .point-round.spawned { background-color: green; box-shadow: 0px 0px 10px green; }
+  
+.application-garage-container .application-garage-header
+{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;  
+    width: 94%;
+    height: 12%; 
+    margin-top: 50px;
+    margin-left: 10px; 
+}
+
+.application-garage-container .application-garage-header .title 
+{
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.application-garage-container .application-garage-header .application-search-bar
+{ 
+    width: 100%; 
+    font-weight: 15px;
+    font-weight: 500;    
+    margin-top: 15px;
+}
+
+.application-garage-container .application-garage-header .application-search-bar .search 
+{
+    width: 100%;
+    position: relative;
+    display: flex;  
+}
+  
+.application-garage-container .application-garage-header .application-search-bar .search .searchTerm 
+{
+    width: 100%; 
+    padding: 5px;
+    height: 30px; 
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    border-radius: 0 5px 5px 0;
+    background-color: #8d8d8d59;
+    color: rgba(97, 97, 97, 0.521);
+    font-weight: 20px;
+    font-weight: 500;   
+    letter-spacing: 1px; 
+}
+ 
+.application-garage-container .application-garage-header .application-search-bar .search .search-button 
+{
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    width: 35px;
+    height: 30px; 
+    border: none;
+    cursor: pointer; 
+    background-color: #8d8d8d59;
+    color: rgba(97, 97, 97, 0.521); 
+    border-radius: 5px 0 0 5px; 
+    font-weight: 20px;
+    font-weight: 500;  
+} 
+ 
+/*------------------------------------------------------------------- [ APPLICATION FOOTER ] -------------------------------------------------------------------*/
+.application-garage-container .application-garage-footer
+{  
+    width: 94%;
+    height: 100%;  
+    margin-left: 10px;   
+}
+
+.application-garage-container .application-garage-footer .application-garage-list
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-height: 29.7rem;
+    max-height: 33.5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-list-header
+{
+    width: 100%;
+    height: 30rem; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-list-header .inspect-back
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    color: #0375FF;  
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-list-footer
+{
+   display: flex;
+   flex-direction: column;
+ 
+  
+   text-align: center; 
+   width: 100%; 
+   margin-bottom: 12rem;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .item-garage
+{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #8d8d8d59;
+    color: #fff;
+    margin-top: 10px; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .item-garage:hover 
+{ 
+    background-color: #8d8d8d86;
+    box-shadow: 0px 0px 10px #8d8d8d86; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .item-garage .item-status
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .item-garage .item-status .point-round
+{
+    width: 15px;
+    height: 15px; 
+    border-radius: 50px; 
+    background-color: red;
+    box-shadow: 0px 0px 10px red;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .item-garage .item-status .point-round.spawned { background-color: green; box-shadow: 0px 0px 10px green; }
+.application-garage-container .application-garage-footer .application-garage-list .item-garage .item-description .title { color: #000; font-size: 14px; font-weight: 600; opacity: 0.9; } 
+.application-garage-container .application-garage-footer .application-garage-list .item-garage .item-description .odometer  { color: #000; font-size: 13px; font-weight: 600; opacity: 0.5; margin-top: 3px; }
+
+
+
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-informations
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 0.6rem; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-informations .title 
+{
+    font-weight: 500;
+    font-size: 15px; 
+    letter-spacing: 0.5px;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-informations .health-line
+{
+	width: 40%;
+	height: 7px;
+	position: relative; 
+	border-radius: 10px; 
+	background-color: rgb(160, 160, 160, 0.40); 
+    margin: 7px;
+}
+ 
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-informations .health-line .health-line-level
+{ 
+	display: block;
+	position: relative;
+	width: 80%;
+	height: 7px;
+    border-radius: 10px; 
+	background-color: #e65c00;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-buttons
+{
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 9rem; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-buttons .application-garage-button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left; 
+    width: 8.5rem;
+    height: 4rem; 
+    margin: 5px; 
+    background-color: #8d8d8d59;
+    color: #000; 
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px; 
+    border-radius: 7px;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-buttons .application-garage-button:hover { box-shadow: 0px 0px 20px #8d8d8de0; }
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-buttons .application-garage-button .items { margin: 0 10px; width: 100%; }
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-buttons .application-garage-button .items .title 
+{
+    margin-top: 3px;
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-view
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin-top: 5rem;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-view .view-info-button:hover { box-shadow: 0px 0px 20px #6b6bfa; }
+.application-garage-container .application-garage-footer .application-garage-list .application-garage-view .view-info-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 8.5rem;
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    background-color: #6b6bfa; 
+    color: #fff;
+}
+  
+.application-garage-container .application-garage-footer .application-garage-list .list-title { font-size: 17px; font-weight: 600; }
+.application-garage-container .application-garage-footer .application-garage-list .list-image 
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;  
+}
+
+.application-garage-container .image-garage { width: 7rem; height: 7rem; transform: rotate(20deg); } 
+.application-garage-container .application-garage-footer .application-garage-list .list-vehicle-informations
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow-x: scroll;
+    background-color: #8d8d8d59;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .list-vehicle-informations .list-item 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    width: 90%;
+    height: 2rem; 
+    margin: 2px;
+    border-bottom: 2px solid #8d8d8d; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .list-vehicle-informations .list-item .title { font-size: 15px; font-weight: 500; }
+.application-garage-container .application-garage-footer .application-garage-list .list-vehicle-informations .list-item .option 
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(146, 146, 146); 
+    font-size: 15px;  
+    font-weight: 500; 
+}
+
+.application-garage-container .application-garage-footer .application-garage-list .list-vehicle-informations .list-item .option .color 
+{
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+
+    background-color: rgb(0,0,0);
+    border-radius: 5px;
+}

@@ -1,0 +1,151 @@
+.application-phonebook-container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: 6px solid #000;
+    
+    background-color: #fff;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    
+    animation-duration:.3s;
+    animation-name:popin;
+} 
+
+.application-phonebook-container .application-header 
+{
+    display: flex;
+    flex-direction: column;  
+    align-items: left; 
+
+    width: 100%;
+    height: 4.5rem; 
+    margin-top: 55px;   
+}
+
+.application-phonebook-container .application-header .title 
+{
+    font-size: 20px;
+    font-weight: 600; 
+    margin: 10px 10px;
+}
+
+.application-phonebook-container .application-header .application-search-bar
+{ 
+    width: 93.1%; 
+    font-weight: 15px;
+    font-weight: 500;   
+    margin: 0 10px;
+}
+
+.application-phonebook-container .application-header .application-search-bar .search 
+{
+    width: 100%;
+    position: relative;
+    display: flex;  
+}
+  
+.application-phonebook-container .application-header .application-search-bar .search .searchTerm 
+{
+    width: 100%; 
+    padding: 5px;
+    height: 30px; 
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    border-radius: 0 5px 5px 0;
+    background-color: #8d8d8d59;
+    color: rgba(97, 97, 97, 0.521);
+    font-weight: 20px;
+    font-weight: 500;   
+    letter-spacing: 1px; 
+}
+ 
+.application-phonebook-container .application-header .application-search-bar .search .search-button 
+{
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    width: 35px;
+    height: 30px; 
+    border: none;
+    cursor: pointer; 
+    background-color: #8d8d8d59;
+    color: rgba(97, 97, 97, 0.521); 
+    border-radius: 5px 0 0 5px; 
+    font-weight: 20px;
+    font-weight: 500;  
+} 
+ 
+.application-phonebook-container .application-footer 
+{
+    display: flex;
+    flex-direction: column;  
+    align-items: left; 
+    width: 100%; 
+    height: 27.9rem;
+    margin-top: 15px;  
+    overflow-x: auto; 
+}
+
+.application-phonebook-container .application-footer .search-list
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    width: 100%;  
+}
+
+.application-phonebook-container .application-footer .search-list .item 
+{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin-top: 7px;
+    width: 93.1%; 
+    height: 3rem;
+
+    background-color: #8d8d8d59;
+    border-radius: 10px;
+}
+
+.application-phonebook-container .application-footer .search-list .item .icon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff; 
+    border-radius: 50px; 
+    height: 35px;
+    width: 35px;
+}
+
+.application-phonebook-container .application-footer .search-list .item .description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    font-weight: 600; 
+    min-width: 8rem;
+    max-width: 8rem;
+}
+
+.application-phonebook-container .application-footer .search-list .item .buttons 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;  
+}
+
+.application-phonebook-container .application-footer .search-list .item .buttons .icon-phonebook { margin: 0 5px; font-size: 18px; color: #7a7a7a; }
+.application-phonebook-container .application-footer .search-list .item .buttons .icon-phonebook:hover {text-shadow: 0px 0px 20px #7a7a7a;}

@@ -1,0 +1,260 @@
+.indigenous-wheel {
+    height: 1500px;
+    width: 1500px;
+     
+     
+    animation: rotateFadeIn 2s ease;
+    transform: translateY(-350px) scale(0.5);
+    cursor: pointer;
+
+    zoom: 60%; 
+}
+ 
+.center {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 435px;
+    height: 435px;
+    background: #00000080;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 45px;
+    align-items: center;
+    z-index: 25;
+}
+.center span { 
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.center:hover {
+    background: #F9A602D0;
+}
+
+.tile {
+    width: 54%;
+    position: absolute;
+    transition: all 0.15s;
+    z-index: 10;
+}
+  
+.tile > svg {
+    fill: #00000080;
+}
+.tile .content {
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 450px;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.tile .content svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: 90px;
+}
+ 
+.tile:hover {
+    z-index: 21;
+    transform: scale(1.2);
+}
+.tile:hover > svg {
+    fill: #F9A602D0;
+}
+
+.tile-1 {
+    top: 5px;
+    left: 336px;
+    height: 520px;
+    animation: tileFadeIn 1s ease;
+}
+.tile-1:before {
+    bottom: -114px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateX(5px) rotate(-1.1deg);
+}
+.tile-1:after {
+    bottom: -10px;
+    right: 260px;
+    transform: rotate(25deg);
+}
+.tile-1:hover {
+    top: -34px;
+}
+.tile-1 .content {
+    width: 60%;
+}
+.tile-1 .content h3 {
+    padding-top: 50px;
+}
+.tile-1 > svg {
+    transform: rotate(0deg);
+}
+
+.tile-2 {
+    right: -116px;
+    top: 335px;
+    animation: tileFadeIn 1s ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 0.25s;
+}
+.tile-2:before {
+    top: 283px;
+    left: -29px;
+    transform: rotate(71.3deg);
+}
+.tile-2:after {
+    bottom: 53px;
+    left: 176px;
+    transform: rotate(100deg);
+}
+.tile-2:hover {
+    top: 322px;
+    right: -152px;
+}
+.tile-2 .content h3 {
+    padding-top: 30px;
+}
+.tile-2 > svg {
+    transform: rotate(72.25deg);
+}
+
+.tile-3 {
+    bottom: 95px;
+    right: 56px;
+    animation: tileFadeIn 1s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.tile-3:before {
+    top: -57px;
+    left: 77px;
+    transform: rotate(143.4deg);
+}
+.tile-3:after {
+    top: 107px;
+    left: 134px;
+    transform: rotate(171deg);
+}
+.tile-3:hover {
+    bottom: 63px;
+    right: 30px;
+}
+.tile-3 .content h3 {
+    padding-top: 50px;
+}
+.tile-3 > svg {
+    transform: rotate(144.5deg);
+}
+
+.tile-4 {
+    bottom: 99px;
+    left: 60px;
+    animation: tileFadeIn 1s ease;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.tile-4:before {
+    top: -60px;
+    right: 80px;
+    transform: rotate(216deg);
+}
+.tile-4:after {
+    top: -35px;
+    right: 327px;
+    transform: rotate(243deg);
+}
+.tile-4:hover {
+    bottom: 59px;
+    left: 36px;
+}
+.tile-4 .content h3 {
+    padding-top: 40px;
+}
+.tile-4 > svg {
+    transform: rotate(216.75deg);
+}
+
+.tile-5 {
+    left: -117px;
+    top: 341px;
+    animation: tileFadeIn 1s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.tile-5:before {
+    bottom: 98px;
+    right: -30px;
+    transform: rotate(288.7deg);
+}
+.tile-5:after {
+    bottom: 281px;
+    right: 101px;
+    transform: rotate(318deg);
+}
+.tile-5:hover {
+    top: 328px;
+    left: -154px;
+}
+.tile-5 .content h3 {
+    padding-top: 40px;
+}
+.tile-5 > svg {
+    transform: rotate(289deg);
+}
+
+@keyframes tileFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    75% {
+        opacity: 0.75;
+        transform: scale(1.15);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-350px) scale(0.2) rotate(-180deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-350px) scale(0.5) rotate(0deg);
+    }
+}
